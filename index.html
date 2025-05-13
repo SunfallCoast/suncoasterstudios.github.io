@@ -1,3 +1,351 @@
+<style>
+html, body {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  width: 100%;
+}
+
+p, li {
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+  padding: 0 2rem;
+  text-transform: uppercase;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  padding: 1.5rem 1rem 0;
+  position: sticky;
+    top: -115px;
+  width: 100%;
+  z-index: 1;
+} @media only screen and (min-width: 1024px) { header {
+  align-items: center;
+  display: flex;
+  padding-bottom: 1.5rem;
+    top: 0;
+}}
+/*header h1 {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+}*/
+header p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+header p span {}
+header a {
+  color: #000;
+  text-decoration: none;
+}
+header article {
+  text-align: center;
+} @media only screen and (min-width: 1024px) { header article {
+  align-items: center;
+  display: flex;
+}}
+header article a {
+  display: block;
+  margin-right: 1rem;
+}
+header article a img {
+  width: 300px;
+}
+header nav {
+  margin-top: 1rem;
+} @media only screen and (min-width: 1024px) { header nav {
+  margin-top: 0;
+  margin-left: auto;
+}}
+header ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} @media only screen and (min-width: 1024px) { header ul {
+  justify-content: right;
+}}
+header li {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.suncoasterstudios {
+  margin-top: 40px;
+} @media only screen and (min-width: 1024px) { .suncoasterstudios {
+  padding: 0 2rem;
+}}
+.suncoasterstudios ul {
+  list-style: none;
+}
+.suncoasterstudios li {
+  padding-bottom: 1rem;
+  position: relative;
+}
+.suncoasterstudios li:before {
+  content: '•';
+  font-size: 20px;
+  line-height: 1.2;
+  position: absolute;
+    left: -16px;
+}
+
+#portfolio {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+#portfolio h1 {}
+#portfolio h2 {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 16px;
+  margin: 0 0 0 40%;
+  text-transform: uppercase;
+} @media only screen and (min-width: 1024px) { #portfolio h2 {
+  font-size: 32px;
+  margin: 0;
+}}
+#portfolio figure {
+  margin: 0 0 4rem;
+  position: relative;
+} @media only screen and (min-width: 1024px) { #portfolio figure {}}
+#portfolio .overview {
+  padding: 0 2rem 2rem;
+} @media only screen and (min-width: 1024px) { #portfolio .overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}}
+#portfolio p.order {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  position: absolute;
+} @media only screen and (min-width: 1024px) { #portfolio p.order {
+  margin: 0;
+  position: unset;
+  width: 40%;
+}}
+#portfolio p.business {
+  color: #999;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 0 40%;
+  text-transform: uppercase;
+} @media only screen and (min-width: 1024px) { #portfolio p.business {
+  font-size: 40px;
+  line-height: 1;
+  margin: 0;
+}}
+@media only screen and (min-width: 1024px) { #portfolio article {
+  width: 60%;
+}}
+#portfolio .description {} @media only screen and (min-width: 1024px) { #portfolio .description {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 1rem;
+}}
+#portfolio .description p:first-of-type {
+  font-weight: 600;
+  margin: 2rem 0 .5rem;
+} @media only screen and (min-width: 1024px) { #portfolio .description p:first-of-type {
+  margin: 0 2rem 0 0;
+}}
+#portfolio .description p:last-of-type {
+  margin: 0;
+}
+#portfolio .gallery {
+  overflow: scroll;
+} @media only screen and (min-width: 1024px) { #portfolio .gallery {
+  overflow: unset;
+  padding: 0 2rem;
+}}
+#portfolio .gallery ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 120vw;
+} @media only screen and (min-width: 1024px) { #portfolio .gallery ul {
+  width: 100%;
+}}
+#portfolio .gallery li {
+  margin-right: 1rem;
+  padding-bottom: 0;
+  text-align: center;
+} @media only screen and (min-width: 1024px) { #portfolio .gallery li {}}
+#portfolio .gallery li:first-of-type {
+  width: 90vw;
+} @media only screen and (min-width: 1024px) { #portfolio .gallery li:first-of-type {
+  width: 77.5%;
+}}
+#portfolio .gallery li:last-of-type {
+  width: 30vw;
+} @media only screen and (min-width: 1024px) { #portfolio .gallery li:last-of-type {
+  margin-right: 0;
+  width: 22.5%;
+}}
+#portfolio .gallery li:before {
+  content: none;
+}
+#portfolio .gallery p {} @media only screen and (min-width: 1024px) { #portfolio .gallery p {}}
+#portfolio .gallery img {
+  width: 100%;
+} @media only screen and (min-width: 1024px) { #portfolio .gallery img {}}
+#portfolio ul.keys {
+  padding: 0 2rem;
+} @media only screen and (min-width: 1024px) { #portfolio ul.keys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}}
+#portfolio ul.keys li {
+  margin-left: 16px;
+} @media only screen and (min-width: 1024px) { #portfolio ul.keys li {
+  width: calc(50% - 2rem);
+}}
+#portfolio ul.keys li.list_heading {
+  font-weight: 600;
+  margin-left: 0;
+} @media only screen and (min-width: 1024px) { #portfolio ul.keys li.list_heading {
+  width: 100%;
+}}
+#portfolio ul.keys li.list_heading:before {
+  content: none;
+}
+
+#about {
+  margin: 0 auto;
+  padding: 0 2rem;
+    max-width: 1220px;
+}
+#about p.get_started {
+  padding: 2rem 0;
+}
+#about p.get_started span {
+  font-size: 18px;
+  font-weight: 600;
+}
+#about h1 {
+  text-align: center;
+}
+#about article {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+    max-width: 300px;
+}
+#about figure {}
+#about h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+}
+#about p {}
+#about figure p {
+  font-size: 20px;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+footer {
+  background: #f3f3f3;
+}
+footer h2 {
+  margin: 0 0 1rem;
+  text-align: center;
+  width: 100%;
+} @media only screen and (min-width: 1024px) { footer h2 {
+  margin: 0;
+}}
+footer article {
+  background: #fff;
+  padding: 4rem 0;
+  text-align: center;
+  width: 100%;
+} @media only screen and (min-width: 1024px) { footer article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 4rem;
+  justify-content: center;
+  padding: 4rem 1rem;
+}}
+footer article img {
+  margin: 1rem 0 0;
+  object-fit: contain;
+  width: 200px;
+} @media only screen and (min-width: 1024px) { footer article img {
+  margin: 0;
+}}
+footer .footer_info {
+  margin: 0 auto;
+  padding: 2rem;
+    max-width: 1220px;
+} @media only screen and (min-width: 1024px) { footer .footer_info {
+  display: flex;
+  gap: 2rem 4rem;
+  padding: 4rem 2rem;
+}}
+footer figure {
+  margin: 2rem 0;
+} @media only screen and (min-width: 1024px) { footer figure {
+  margin: 0;
+}}
+footer figure img {
+  width: 200px;
+}
+footer figure p {
+  margin: 0;
+}
+footer figure p:first-of-type {
+  font-weight: 600;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+}
+footer figure a {
+  color: unset;
+  text-decoration: none;
+}
+footer figure a img {
+  width: 20px;
+}
+footer .copyright {
+  border-top: 1px solid #000;
+  padding: 1rem 0;
+  width: 100%;
+}
+footer .copyright p {
+  margin: 0;
+  padding: 0 .5rem;
+  text-align: center;
+}
+</style>
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -9,7 +357,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+
+  <header>
     <article>
       <a href="https://suncoasterstudios.com/">
         <img src="img/sun_coaster_studios-logo.webp" alt="Sun Coaster Studios">
@@ -22,8 +371,43 @@
       </ul>
     </nav>
   </header>
+
   <div class="suncoasterstudios">
   <section id="portfolio">
+    <h1>Our Work</h1>
+    <figure>
+      <div class="overview">
+        <p class="order">01</p>
+        <article>
+          <p class="business">E-Commerce</p>
+          <h2>The Treadmill Factory</h2>
+          <div class="description">
+            <p>About</p>
+            <p>At Sun Coaster Studios, we had the privilege of designing and implementing a refined digital experience for The Treadmill Factory, leading to exceptional business growth and customer engagement.</p>
+          </div>
+        </article>
+      </div>
+      <div class="gallery">
+        <ul>
+          <li>
+            <p>Desktop</p>
+            <img src="img/portfolio-fitness_factory-dt.webp" alt="The Treadmill Factory">
+          </li>
+          <li>
+            <p>Mobile</p>
+            <img src="img/portfolio-fitness_factory-mb.webp" alt="The Treadmill Factory">
+          </li>
+        </ul>
+      </div>
+      <ul class="keys">
+        <li class="list_heading">Key Achievements:</li>
+        <li><strong>Strategic Website Redesign:</strong> A complete overhaul of The Fitness Factory’s website, resulting in a remarkable increase in company profits.</li>
+        <li><strong>Elevated User Experience:</strong> Through thoughtful enhancements to user experience, we achieved a rise in average order value, fostering a more seamless and enjoyable customer journey.</li>
+        <li><strong>Optimized Performance and Usability:</strong> Our performance optimization initiatives drove a significant increase in total orders, ensuring a smooth and efficient online shopping experience.</li>
+        <li><strong>Increased Customer Volume:</strong> By implementing targeted design improvements and intuitive navigation, we boosted the online store’s customer volume.</li>
+        <li><strong>Responsive and Mobile-First Approach:</strong> Our emphasis on responsive design and mobile optimization led to a substantial growth in mobile and desktop traffic.</li>
+      </ul>
+    </figure>
     <figure>
       <div class="overview">
         <p class="order">02</p>
@@ -40,9 +424,11 @@
         <ul>
           <li>
             <p>Desktop</p>
+            <img src="img/portfolio-falls_avenue_resort-dt.webp" alt="Falls Avenue Resort">
           </li>
           <li>
             <p>Mobile</p>
+            <img src="img/portfolio-falls_avenue_resort-mb.webp" alt="Falls Avenue Resort">
           </li>
         </ul>
       </div>
@@ -55,6 +441,42 @@
     </figure>
   </section>
 </div>
+
+<footer>
+  <article>
+    <h2>Our Partners</h2>
+    <img src="img/logo-shopifyplus.png" alt="Shopify Plus">
+    <img src="img/klaviyo-partner-badge.webp" alt="Klaviyo">
+    <img src="img/logo-stablewp.png" alt="StableWP">
+  </article>
+  <div class="footer_info">
+    <figure>
+      <img src="img/sun_coaster_studios-logo.webp" alt="Sun Coaster Studios">
+    </figure>
+    <figure>
+      <p>Location</p>
+      <p>42 Carden Street<br>Guelph, ON N1H 3A2</p>
+    </figure>
+    <figure>
+      <p>Contact Us</p>
+      <p><a href="mailto:suncoasterstudios@gmail.com">suncoasterstudios@gmail.com</a></p>
+    </figure>
+    <figure>
+      <p>Follow us</p>
+      <p>
+        <a href="https://x.com/SCS_SunCoaster">
+          <img src="img/TWITTER_Logo.svg" alt="Twitter X">
+        </a>
+        <a href="https://www.linkedin.com/company/sun-coaster-studios/">
+          <img src="img/LINKEDIN_Logo.svg" alt="LinkedIn">
+        </a>
+      </p>
+    </figure>
+  </div>
+  <div class="copyright">
+    <p>© 2025 - <strong>Sun Coaster Studios</strong></p>
+  </div>
+</footer>
 
 </body>
 </html>
